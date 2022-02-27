@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Park Smart</string>
+    <string name="title_activity_map">Map</string>
+    <string name="PREFERENCE_REACH_TIMER">runtimer</string>
+    <string name="UID">slotID</string>
+    <string name="PREFERENCES_PARK_TIME">parktimer</string>
+    <string name="PREFERENCES_PARK_COST">parkcost</string>
+    <string name="PREFERENCES_PARK_TIME_VALS">timervalues</string>
+    <string name="PREFERENCES_USER">userdetails</string>
+    <string name="PREFERENCES_PARKING_TIMER">parktimer</string>
+    <string name="PREFERENCES_DURATION">duration</string>
+</resources>

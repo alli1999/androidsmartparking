@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingCost"
+    android:background="@drawable/grad_bg">
+
+    <TextView
+        android:id="@+id/paytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Total Pay"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textAllCaps="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytext"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/pay"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/starttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/endtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:text="End Time"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/durationtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:text="Duration"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutpaybuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/counter"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Pay At The Counter"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/card"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Pay With Card"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/counter"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exitcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Valid Code From Counter After Paying"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:inputType="numberPassword"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="25dp"
+                android:layout_below="@+id/textcode"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_bg"
+                android:text="GO"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="25dp"
+                android:layout_below="@+id/textcode"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/code"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
